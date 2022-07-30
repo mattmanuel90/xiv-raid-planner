@@ -19,6 +19,10 @@ const Raid: NextPage = () => {
             <ComponentPanel />
             <CanvasMain />
             <h1>First Post</h1>
+            <h1>Second Post</h1>
+            {
+                waymarks.filter(x => Number(x) > 1).map(x => <p>{Number(x) * 2 + 2}</p>)
+            }
         </div>
     );
 }
